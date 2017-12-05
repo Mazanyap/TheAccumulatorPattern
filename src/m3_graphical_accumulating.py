@@ -95,14 +95,18 @@ def draw_parallel_lines(n, point, length, window):
       :type length: int
       :type window: rg.RoseWindow
     """
-    line = rg.Line(point, point.x + length)
-    line.attach_to(window)
 
-    for k in range(n + 1):
-        pointS = (point.y - (k * 30)), point.x
-        pointE =
-        lines = rg.Line((point.y - (k * 30)), (point.x + length))
-        lines.attach_to(window)
+    x = point.x
+
+
+    for k in range(n):
+        y = point.y
+        y = y - (k * 30)
+        End = rg.Point((x + length), y)
+        Start = rg.Point(x, y)
+        line = rg.Line(Start, End)
+        line.attach_to(window)
+
     window.render()
 
     # ------------------------------------------------------------------
