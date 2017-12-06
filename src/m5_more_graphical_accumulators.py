@@ -345,7 +345,7 @@ def draw_lines_from_rectangles(rectangle1, rectangle2, n, window):
     window.render()
 
     # ------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # Done: 5. Implement and test this function.
     #          Tests have been written for you (above).
     #
     # CONSIDER using the ACCUMULATOR IN GRAPHICS pattern,
